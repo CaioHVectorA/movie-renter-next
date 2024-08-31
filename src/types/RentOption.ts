@@ -3,7 +3,8 @@ export type RentOption = {
     duration: number,
     original_price: number,
     discount_price: number,
-    discount_percentage: string,
+    base_discount_percentage: string,
+    discount: number,
     type: 'COMMON' | 'ESPECIAL' | 'PREMIUM',
     description?: string
 }
