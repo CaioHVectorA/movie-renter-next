@@ -1,11 +1,13 @@
-import { MovieContainer } from './container'
+import { MovieInitialContainer } from './init-container'
 import { MovieContent }  from './content'
 import { MovieImage } from './image'
 import { MovieRentOption } from './rent-option'
+import { MovieRentContainer } from './rent-container'
 
 export const Movie = {
-    Container: MovieContainer,
+    InitialContainer: MovieInitialContainer,
     Content: MovieContent,
     Image: MovieImage,
-    RentOption: MovieRentOption
+    RentOption: MovieRentOption,
+    RentContainer: MovieRentContainer
 }

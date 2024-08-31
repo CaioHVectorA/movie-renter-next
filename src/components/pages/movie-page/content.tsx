@@ -4,17 +4,13 @@ import { PropsWithChildren } from "react";
 export const MovieContent = ({ data, children }: PropsWithChildren<{ data: Movie }>) => (
   <div>
     <h1 className=" text-4xl">{data.title}</h1>
-    <div className=" flex gap-2 items-center">
-      <Star fill="gold" size={16} />
-      <div className=" flex">
-        <p className=" text-sm">{data.rating}</p>
-        <span className="text-sm opacity-30">/10</span>
+      <p className=" max-w-[36rem] text-xl mt-4">{data.sinopsis}</p>
+      <div className=" flex gap-2 items-center my-6">
+        <Star fill="gold" size={28} />
+        <div className=" flex max-md:justify-center">
+          <p className=" text-xl">{data.rating}</p>
+          <span className="text-xl opacity-30">/10</span>
+        </div>
       </div>
-    </div>
-    <div>
-      <p className=" max-w-[36rem] text-xl">{data.sinopsis}</p>
-      <h2 className=" my-6 text-2xl">Opções de aluguel</h2>
-      { children }
-    </div>
   </div>
 );

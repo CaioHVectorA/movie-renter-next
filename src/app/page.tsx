@@ -7,7 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default async ({ searchParams }: { searchParams: { page: string } }) => {
-  const { data } = await api<{ data: Movie[], total: number, per_page: number }>(`/movies?page=${searchParams.page}`);
+  const { data } = await api<{ data: Movie[], total: number, per_page: number }>(`/movies?page=${searchParams.page || 1}`);
   return (
     <>
       <Home.InitialSection>

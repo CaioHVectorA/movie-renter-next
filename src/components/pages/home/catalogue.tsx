@@ -16,7 +16,7 @@ export function Catalogue({ data, pages }: { data: Movie[], pages: number }) {
                             width={240}
                             // height={300}
                         />
-                        <h2 className="text-xl font-bold">{movie.title}</h2>
+                        <h2 className="text-xl font-bold leading-5 h-10 line-clamp-2">{movie.title}</h2>
                         <p className=" max-md:text-center text-justify line-clamp-4">{movie.sinopsis}</p>
                         <div className=" flex gap-2">
                             {/* <Button className=" w-6/12" variant={'outline'}><Star className=" mr-1"/> Favoritar</Button> */}
